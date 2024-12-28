@@ -6,7 +6,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/KazKozDev/Simple-CRM-with-AI/graphs/commit-activity)
 
-A simple yet powerful CRM (Customer Relationship Management) system built with Python, Streamlit, and AI analytics capabilities. The system uses Ollama's Mistral model for generating insights about clients and deals.
+A simple yet powerful CRM (Customer Relationship Management) system built with Python, Streamlit, and AI analytics capabilities. The system uses Ollama's Gemma2 model for generating insights about clients and deals.
 
 ![Smart AI CRM](pics/landing.png)
 
@@ -54,13 +54,13 @@ pip install -r requirements.txt
      - Install WSL2 following [Microsoft's guide](https://learn.microsoft.com/en-us/windows/wsl/install)
      - Install Ollama in WSL2 following [Ollama's guide](https://github.com/ollama/ollama/blob/main/docs/windows.md)
 
-4. Pull the Mistral model:
+4. Pull the Gemma2 model:
 ```bash
 # macOS
-ollama pull mistral
+ollama pull gemma2:9b
 
 # Windows (in WSL2)
-wsl -d Ubuntu -e ollama pull mistral
+wsl -d Ubuntu -e ollama pull gemma2:9b
 ```
 
 ## Manual Startup
@@ -123,7 +123,7 @@ Note: This step is only needed once after creating the file.
 The script will:
 - Check if Ollama is installed
 - Start Ollama if it's not running
-- Download the Mistral model if needed
+- Download the Gemma2 model if needed
 - Launch the CRM application
 
 The CRM interface will automatically open in your default web browser at http://localhost:8501
@@ -132,7 +132,7 @@ The CRM interface will automatically open in your default web browser at http://
 
 - Python 3.8+
 - Ollama installed locally (https://ollama.ai)
-- Mistral model for Ollama
+- Gemma2:9b model for Ollama
 - Required Python packages (see requirements.txt)
 
 ## Project Structure
@@ -190,7 +190,7 @@ This project wouldn't be possible without the amazing work of these projects and
 
 ### Core Technologies
 - [Ollama](https://ollama.ai) - Local large language model
-- [Mistral AI](https://mistral.ai) - The base AI model used
+- [Google](https://blog.google/technology/developers/gemma-open-models/) - The Gemma model
 - [Streamlit](https://streamlit.io) - The web application framework
 - [SQLite](https://sqlite.org) - Database engine
 
