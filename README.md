@@ -8,6 +8,8 @@
 
 A simple yet powerful CRM (Customer Relationship Management) system built with Python, Streamlit, and AI analytics capabilities. The system uses Ollama's Mistral model for generating insights about clients and deals.
 
+![Smart AI CRM](pics/landing.png)
+
 ## Features
 
 - 🏢 Company Information Management
@@ -18,6 +20,20 @@ A simple yet powerful CRM (Customer Relationship Management) system built with P
 - 📊 Advanced Analytics Dashboard
 - 🤖 Local AI processing using Ollama
 - 🔒 Secure local database storage
+
+## Screenshots
+
+### Company Information Management
+![Company Information](pics/company-info.png)
+Manage your company details, target market, and unique selling points in one place.
+
+### Task Management
+![Task Management](pics/task-management.png)
+Create, assign, and track tasks with due dates and client associations.
+
+### Deal Analytics
+![Deal Analytics](pics/deal-analytics.png)
+Monitor your deal pipeline and track performance with interactive visualizations.
 
 ## Installation
 
